@@ -36,9 +36,9 @@ class Products extends Migration
                 ->value(1);
 
             // basic pricing
-            $table->decimal('price')->title('Price')
+            $table->decimal('price')->title("Price")
                 ->required();
-            $table->decimal('special_price')->title('Special Price')
+            $table->decimal('special_price')->title("Special Price")
                 ->required();
             $table->datetime('special_starts_at')->title("Special Price Starts At");
             $table->datetime('special_ends_at')->title("Special Price Ends At");
