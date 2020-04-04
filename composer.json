@@ -1,0 +1,28 @@
+{
+    "name": "osmphp/shop",
+    "autoload": {
+        "psr-4": {
+            "Osm\\Shop\\": "src/",
+            "Osm\\Shop\\Tests\\": "tests/",
+            "Osm\\Shop\\Samples\\": "samples/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "osmphp/framework": "dev-master"
+    },
+    "extra": {
+        "osm": {
+            "component_pools": {
+                "src": {
+                    "module_path": "*/Module.php",
+                    "theme_path": "*/theme.php"
+                },
+                "samples": {
+                    "module_path": "*/Module.php",
+                    "testing": true
+                }
+            }
+        }
+    }
+}
