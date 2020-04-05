@@ -32,8 +32,9 @@ trait DetectAreaTrait
 
         $osm_app->area = 'backend';
         $osm_app->area_->setUrl(Url::new([
-            // area's base URL is later used for URL generation as base URL
-            'base_url' => "{$baseUrl}/{$urlKey}",
+            // area's route base URL is later used for detating incoming route
+            // and for URL generation
+            'route_base_url' => "/{$urlKey}",
         ]));
 
         return $next();
