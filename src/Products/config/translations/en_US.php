@@ -23,4 +23,5 @@ return [
     "Product" => "Product",
     "Value" => "Value",
     "Position" => "Position",
+    "Products" => "Products",
 ];
