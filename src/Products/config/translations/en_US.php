@@ -24,4 +24,5 @@ return [
     "Value" => "Value",
     "Position" => "Position",
     "Products" => "Products",
+    "Add Product" => "Add Product",
 ];

@@ -15,6 +15,7 @@ class Module extends BaseModule
 
         // load shop layers after all UI layers
         'Osm_Ui_Aba',
+        'Osm_Shop_Breadcrumbs',
     ];
 
     public $traits = [

@@ -10,7 +10,7 @@ class Backend extends Controller
     public function productsPage() {
         return osm_layout('products', [
             '#page' => [
-                'title' => osm_t("[page title]"),
+                'title' => osm_t("Products"),
             ],
             // bind data to views
         ]);
