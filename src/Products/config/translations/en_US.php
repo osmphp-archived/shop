@@ -25,4 +25,7 @@ return [
     "Position" => "Position",
     "Products" => "Products",
     "Add Product" => "Add Product",
+    "There are no products yet." => "There are no products yet.",
+    "ID" => "ID",
+    "Edit" => "Edit",
 ];
