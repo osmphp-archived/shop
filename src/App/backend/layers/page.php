@@ -7,7 +7,7 @@ return [
     '#page' => [
         'header' => Header::new([
             'id' => 'header',
-            'modifier' => '-primary -center',
+            'modifier' => '-secondary',
         ]),
     ],
     '#header.menu' => [

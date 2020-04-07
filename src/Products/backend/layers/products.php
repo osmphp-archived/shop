@@ -22,7 +22,6 @@ return [
                         ],
                         'products' => [
                             'title' => osm_t("Products"),
-                            'url' => osm_url('GET /products/'),
                         ],
 
                     ],

@@ -28,4 +28,7 @@ return [
     "There are no products yet." => "There are no products yet.",
     "ID" => "ID",
     "Edit" => "Edit",
+    "Product not found" => "Product not found",
+    "New Product" => "New Product",
+    "Saving product data ..." => "Saving product data ...",
 ];
