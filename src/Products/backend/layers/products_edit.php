@@ -1,7 +1,7 @@
 <?php
 
 use Osm\Framework\Views\Views\Container;
-use Osm\Shop\Breadcrumbs\Views\Breadcrumbs;
+use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\Forms\Views\Form;
 use Osm\Ui\Inputs\Views\Input;
 use Osm\Ui\MenuBars\Views\Heading;

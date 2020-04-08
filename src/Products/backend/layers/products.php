@@ -1,7 +1,7 @@
 <?php
 
 use Osm\Framework\Views\Views\Container;
-use Osm\Shop\Breadcrumbs\Views\Breadcrumbs;
+use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\DataTables\Columns\Column;
 use Osm\Ui\DataTables\Views\DataTable;
 use Osm\Ui\MenuBars\Views\Heading;
