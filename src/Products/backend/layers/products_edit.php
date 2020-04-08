@@ -49,11 +49,14 @@ return [
                     'route' => 'POST /products/edit',
                     'submitting_message' => osm_t("Saving product data ..."),
                     'sheet' => 'products',
+                    'autocomplete_prefix' => 'backend-products__',
+                    'focus' => true,
                     'views' => [
                         'title' => Input::new([
                             'name' => 'title',
                             'title' => osm_t("Title"),
                             'required' => true,
+                            'autocomplete' => 'off',
                         ]),
                     ],
                 ]),
