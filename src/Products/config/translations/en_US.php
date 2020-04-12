@@ -33,4 +33,11 @@ return [
     "Saving product data ..." => "Saving product data ...",
     "Starting At" => "Starting At",
     "Ending At" => "Ending At",
+    "Basics" => "Basics",
+    "Content" => "Content",
+    "SEO Content" => "SEO Content",
+    "Images" => "Images",
+    "Pricing" => "Pricing",
+    "Related Products" => "Related Products",
+    "Similar Products" => "Similar Products",
 ];
