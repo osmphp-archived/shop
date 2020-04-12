@@ -64,21 +64,25 @@ return [
                             'title' => osm_t("Type"),
                             'required' => true,
                             'sort_order' => 20,
+                            'wrap_modifier' => '-narrow',
                         ]),
                         'sku' => Input::new([
                             'title' => osm_t("SKU"),
                             'required' => true,
                             'sort_order' => 30,
+                            'wrap_modifier' => '-narrow',
                         ]),
                         'url_key' => Input::new([
                             'title' => osm_t("URL Key"),
                             'required' => true,
                             'sort_order' => 40,
+                            'wrap_modifier' => '-narrow',
                         ]),
                         'price' => Input::new([
                             'title' => osm_t("Price"),
                             'required' => true,
                             'sort_order' => 42,
+                            'wrap_modifier' => '-narrow',
                         ]),
 
                         # Section: Visibility
@@ -141,12 +145,14 @@ return [
                             'sort_order' => 110,
                         ]),
                         'special_starts_at' => Input::new([
-                            'title' => osm_t("Special Price Starts At"),
+                            'title' => osm_t("Starting At"),
                             'sort_order' => 120,
+                            'wrap_modifier' => '-narrow',
                         ]),
                         'special_ends_at' => Input::new([
-                            'title' => osm_t("Special Price Ends At"),
+                            'title' => osm_t("Ending At"),
                             'sort_order' => 130,
+                            'wrap_modifier' => '-narrow',
                         ]),
                         #endregion
 

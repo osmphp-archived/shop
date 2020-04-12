@@ -31,4 +31,6 @@ return [
     "Product not found" => "Product not found",
     "New Product" => "New Product",
     "Saving product data ..." => "Saving product data ...",
+    "Starting At" => "Starting At",
+    "Ending At" => "Ending At",
 ];
