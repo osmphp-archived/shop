@@ -5,11 +5,15 @@ use Osm\Ui\Menus\Items\Type;
 
 return [
     '#page' => [
-        'header' => Header::new([
-            'id' => 'header',
-            'modifier' => '-secondary',
-        ]),
+        'views' => [
+            'header' => Header::new([
+                'id' => 'header',
+                'wrap_modifier' => '-secondary',
+                'sort_order' => 10,
+            ]),
+        ],
     ],
+
     '#header.menu' => [
         'items' => [
             'home' => [
