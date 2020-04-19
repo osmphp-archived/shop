@@ -17,9 +17,7 @@ class Backend extends Controller
     protected function default($property) {
         switch ($property) {
             case 'edit_layout': return osm_layout('products_edit', [
-                '#form' => [
-                    'row_id' => $this->query['id'] ?? null,
-                ],
+                '#form.row_id' => $this->query['id'] ?? null,
             ]);
             case 'edit_form': return $this->edit_layout->select('#form');
             case 'edit_data': return $this->edit_form->data;
