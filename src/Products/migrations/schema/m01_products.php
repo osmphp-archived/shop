@@ -5,7 +5,7 @@ namespace Osm\Shop\Products\Migrations\Schema;
 use Osm\Data\Tables\Blueprint;
 use Osm\Framework\Migrations\Migration;
 
-class Products extends Migration
+class m01_products extends Migration
 {
     public function up() {
         $this->db->create('products', function (Blueprint $table) {
