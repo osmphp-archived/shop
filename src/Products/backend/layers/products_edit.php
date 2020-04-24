@@ -2,7 +2,9 @@
 
 use Osm\Framework\Views\Views\Text;
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
+use Osm\Ui\Forms\Views\DateField;
 use Osm\Ui\Forms\Views\Form;
+use Osm\Ui\Forms\Views\PriceField;
 use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
 use Osm\Ui\Forms\Views\StringField;
@@ -79,7 +81,7 @@ return [
                             'sort_order' => 40,
                             'wrap_modifier' => '-narrow',
                         ]),
-                        'price' => StringField::new([
+                        'price' => PriceField::new([
                             'title' => osm_t("Price"),
                             'required' => true,
                             'sort_order' => 50,
@@ -165,16 +167,16 @@ return [
                             'title' => osm_t("Special Price"),
                             'sort_order' => 10,
                             'items' => [
-                                'special_price' => StringField::new([
+                                'special_price' => PriceField::new([
                                     'title' => osm_t("Special Price"),
                                     'sort_order' => 10,
                                 ]),
-                                'special_starts_at' => StringField::new([
+                                'special_starts_at' => DateField::new([
                                     'title' => osm_t("Starting At"),
                                     'sort_order' => 20,
                                     'wrap_modifier' => '-narrow',
                                 ]),
-                                'special_ends_at' => StringField::new([
+                                'special_ends_at' => DateField::new([
                                     'title' => osm_t("Ending At"),
                                     'sort_order' => 30,
                                     'wrap_modifier' => '-narrow',
