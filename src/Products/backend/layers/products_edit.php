@@ -9,6 +9,7 @@ use Osm\Ui\Forms\Views\PriceField;
 use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
 use Osm\Ui\Forms\Views\StringField;
+use Osm\Ui\Forms\Views\TextField;
 use Osm\Ui\MenuBars\Views\Heading;
 use Osm\Ui\Menus\Items\Type;
 
@@ -115,11 +116,11 @@ return [
                     'title' => osm_t("Content"),
                     'sort_order' => 20,
                     'items' => [
-                        'summary' => StringField::new([
+                        'summary' => TextField::new([
                             'title' => osm_t("Summary"),
                             'sort_order' => 10,
                         ]),
-                        'description' => StringField::new([
+                        'description' => TextField::new([
                             'title' => osm_t("Description"),
                             'sort_order' => 20,
                         ]),
@@ -131,11 +132,11 @@ return [
                                     'title' => osm_t("Meta Title"),
                                     'sort_order' => 10,
                                 ]),
-                                'meta_description' => StringField::new([
+                                'meta_description' => TextField::new([
                                     'title' => osm_t("Meta Description"),
                                     'sort_order' => 20,
                                 ]),
-                                'meta_keywords' => StringField::new([
+                                'meta_keywords' => TextField::new([
                                     'title' => osm_t("Meta Keywords"),
                                     'sort_order' => 30,
                                 ]),
