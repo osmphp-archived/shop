@@ -2,6 +2,7 @@
 
 use Osm\Framework\Views\Views\Text;
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
+use Osm\Ui\Forms\Views\CheckboxField;
 use Osm\Ui\Forms\Views\DateField;
 use Osm\Ui\Forms\Views\DropdownField;
 use Osm\Ui\Forms\Views\Form;
@@ -94,15 +95,15 @@ return [
                             'title' => osm_t("Visibility"),
                             'sort_order' => 60,
                             'items' => [
-                                'enabled' => StringField::new([
+                                'enabled' => CheckboxField::new([
                                     'title' => osm_t("Enabled"),
                                     'sort_order' => 10,
                                 ]),
-                                'show_in_listing' => StringField::new([
+                                'show_in_listing' => CheckboxField::new([
                                     'title' => osm_t("Show On Listing Pages"),
                                     'sort_order' => 20,
                                 ]),
-                                'show_in_search' => StringField::new([
+                                'show_in_search' => CheckboxField::new([
                                     'title' => osm_t("Show On Search Page"),
                                     'sort_order' => 30,
                                 ]),
