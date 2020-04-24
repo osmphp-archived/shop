@@ -10,7 +10,7 @@ use Osm\Ui\Menus\Items\Type;
 return [
     '@include' => ['page'],
     '#page.modifier' => '-products',
-    '#content.views' => [
+    '#content.items' => [
         'breadcrumbs' => Breadcrumbs::new([
             'items' => [
                 'content' => [

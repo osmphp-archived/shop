@@ -4,7 +4,7 @@ use Osm\Ui\MenuBars\Views\Header;
 use Osm\Ui\Menus\Items\Type;
 
 return [
-    '#page.views' => [
+    '#page.items' => [
         'header' => Header::new([
             'id' => 'header',
             'wrap_modifier' => '-secondary',

@@ -14,7 +14,7 @@ return [
     '#page.modifier' => '-products-edit',
     '#page.translations' => [
     ],
-    '#content.views' => [
+    '#content.items' => [
         'breadcrumbs' => Breadcrumbs::new([
             'id' => 'breadcrumbs',
             'items' => [
@@ -50,11 +50,11 @@ return [
             'sheet' => 'products',
             'autocomplete_prefix' => 'backend-products__',
             'focus' => true,
-            'views' => [
+            'items' => [
                 'basics' => Tab::new([
                     'title' => osm_t("Basics"),
                     'sort_order' => 10,
-                    'views' => [
+                    'items' => [
                         'title' => Input::new([
                             'title' => osm_t("Title"),
                             'required' => true,
@@ -88,7 +88,7 @@ return [
                         'visibility' => Section::new([
                             'title' => osm_t("Visibility"),
                             'sort_order' => 60,
-                            'views' => [
+                            'items' => [
                                 'enabled' => Input::new([
                                     'title' => osm_t("Enabled"),
                                     'sort_order' => 10,
@@ -110,7 +110,7 @@ return [
                 'content' => Tab::new([
                     'title' => osm_t("Content"),
                     'sort_order' => 20,
-                    'views' => [
+                    'items' => [
                         'summary' => Input::new([
                             'title' => osm_t("Summary"),
                             'sort_order' => 10,
@@ -122,7 +122,7 @@ return [
                         'seo' => Section::new([
                             'title' => osm_t("SEO Content"),
                             'sort_order' => 30,
-                            'views' => [
+                            'items' => [
                                 'meta_title' => Input::new([
                                     'title' => osm_t("Meta Title"),
                                     'sort_order' => 10,
@@ -143,7 +143,7 @@ return [
                 'images' => Tab::new([
                     'title' => osm_t("Images"),
                     'sort_order' => 30,
-                    'views' => [
+                    'items' => [
                         'image' => Input::new([
                             'title' => osm_t("Image"),
                             'sort_order' => 10,
@@ -160,11 +160,11 @@ return [
                 'pricing' => Tab::new([
                     'title' => osm_t("Pricing"),
                     'sort_order' => 40,
-                    'views' => [
+                    'items' => [
                         'special_price' => Section::new([
                             'title' => osm_t("Special Price"),
                             'sort_order' => 10,
-                            'views' => [
+                            'items' => [
                                 'special_price' => Input::new([
                                     'title' => osm_t("Special Price"),
                                     'sort_order' => 10,
