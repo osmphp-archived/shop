@@ -5,7 +5,7 @@ use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\Forms\Views\Form;
 use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
-use Osm\Ui\Inputs\Views\Input;
+use Osm\Ui\Forms\Views\StringField;
 use Osm\Ui\MenuBars\Views\Heading;
 use Osm\Ui\Menus\Items\Type;
 
@@ -55,31 +55,31 @@ return [
                     'title' => osm_t("Basics"),
                     'sort_order' => 10,
                     'items' => [
-                        'title' => Input::new([
+                        'title' => StringField::new([
                             'title' => osm_t("Title"),
                             'required' => true,
                             'autocomplete' => 'off',
                             'sort_order' => 10,
                         ]),
-                        'type' => Input::new([
+                        'type' => StringField::new([
                             'title' => osm_t("Type"),
                             'required' => true,
                             'sort_order' => 20,
                             'wrap_modifier' => '-narrow',
                         ]),
-                        'sku' => Input::new([
+                        'sku' => StringField::new([
                             'title' => osm_t("SKU"),
                             'required' => true,
                             'sort_order' => 30,
                             'wrap_modifier' => '-narrow',
                         ]),
-                        'url_key' => Input::new([
+                        'url_key' => StringField::new([
                             'title' => osm_t("URL Key"),
                             'required' => true,
                             'sort_order' => 40,
                             'wrap_modifier' => '-narrow',
                         ]),
-                        'price' => Input::new([
+                        'price' => StringField::new([
                             'title' => osm_t("Price"),
                             'required' => true,
                             'sort_order' => 50,
@@ -89,15 +89,15 @@ return [
                             'title' => osm_t("Visibility"),
                             'sort_order' => 60,
                             'items' => [
-                                'enabled' => Input::new([
+                                'enabled' => StringField::new([
                                     'title' => osm_t("Enabled"),
                                     'sort_order' => 10,
                                 ]),
-                                'show_in_listing' => Input::new([
+                                'show_in_listing' => StringField::new([
                                     'title' => osm_t("Show On Listing Pages"),
                                     'sort_order' => 20,
                                 ]),
-                                'show_in_search' => Input::new([
+                                'show_in_search' => StringField::new([
                                     'title' => osm_t("Show On Search Page"),
                                     'sort_order' => 30,
                                 ]),
@@ -111,11 +111,11 @@ return [
                     'title' => osm_t("Content"),
                     'sort_order' => 20,
                     'items' => [
-                        'summary' => Input::new([
+                        'summary' => StringField::new([
                             'title' => osm_t("Summary"),
                             'sort_order' => 10,
                         ]),
-                        'description' => Input::new([
+                        'description' => StringField::new([
                             'title' => osm_t("Description"),
                             'sort_order' => 20,
                         ]),
@@ -123,15 +123,15 @@ return [
                             'title' => osm_t("SEO Content"),
                             'sort_order' => 30,
                             'items' => [
-                                'meta_title' => Input::new([
+                                'meta_title' => StringField::new([
                                     'title' => osm_t("Meta Title"),
                                     'sort_order' => 10,
                                 ]),
-                                'meta_description' => Input::new([
+                                'meta_description' => StringField::new([
                                     'title' => osm_t("Meta Description"),
                                     'sort_order' => 20,
                                 ]),
-                                'meta_keywords' => Input::new([
+                                'meta_keywords' => StringField::new([
                                     'title' => osm_t("Meta Keywords"),
                                     'sort_order' => 30,
                                 ]),
@@ -144,7 +144,7 @@ return [
                     'title' => osm_t("Images"),
                     'sort_order' => 30,
                     'items' => [
-                        'image' => Input::new([
+                        'image' => StringField::new([
                             'title' => osm_t("Image"),
                             'sort_order' => 10,
                         ]),
@@ -165,16 +165,16 @@ return [
                             'title' => osm_t("Special Price"),
                             'sort_order' => 10,
                             'items' => [
-                                'special_price' => Input::new([
+                                'special_price' => StringField::new([
                                     'title' => osm_t("Special Price"),
                                     'sort_order' => 10,
                                 ]),
-                                'special_starts_at' => Input::new([
+                                'special_starts_at' => StringField::new([
                                     'title' => osm_t("Starting At"),
                                     'sort_order' => 20,
                                     'wrap_modifier' => '-narrow',
                                 ]),
-                                'special_ends_at' => Input::new([
+                                'special_ends_at' => StringField::new([
                                     'title' => osm_t("Ending At"),
                                     'sort_order' => 30,
                                     'wrap_modifier' => '-narrow',
