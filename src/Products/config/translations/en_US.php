@@ -40,4 +40,7 @@ return [
     "Pricing" => "Pricing",
     "Related Products" => "Related Products",
     "Similar Products" => "Similar Products",
+    "Software" => "Software",
+    "Services" => "Services",
+    "Product Types" => "Product Types",
 ];

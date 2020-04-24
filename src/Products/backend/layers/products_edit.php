@@ -3,6 +3,7 @@
 use Osm\Framework\Views\Views\Text;
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\Forms\Views\DateField;
+use Osm\Ui\Forms\Views\DropdownField;
 use Osm\Ui\Forms\Views\Form;
 use Osm\Ui\Forms\Views\PriceField;
 use Osm\Ui\Forms\Views\Section;
@@ -63,7 +64,8 @@ return [
                             'autocomplete' => 'off',
                             'sort_order' => 10,
                         ]),
-                        'type' => StringField::new([
+                        'type' => DropdownField::new([
+                            'option_list' => 'product_types',
                             'title' => osm_t("Type"),
                             'required' => true,
                             'sort_order' => 20,
