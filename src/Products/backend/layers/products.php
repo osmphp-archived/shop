@@ -1,11 +1,11 @@
 <?php
 
-use Osm\Framework\Views\Views\Container;
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\DataTables\Columns\Column;
 use Osm\Ui\DataTables\Views\DataTable;
-use Osm\Ui\MenuBars\Views\Heading;
 use Osm\Ui\Menus\Items\Type;
+use Osm\Ui\Menus\Views\LinkItem;
+use Osm\Ui\Pages\Views\Heading;
 
 return [
     '@include' => ['page'],
@@ -22,17 +22,7 @@ return [
 
             ],
         ]),
-        'heading' => Heading::new([
-            'items' => [
-                'add' => [
-                    'type' => Type::LINK,
-                    'title' => osm_t("Add Product"),
-                    'url' => osm_url('GET /products/edit'),
-                    'modifier' => '-filled',
-                    'sort_order' => 10,
-                ],
-            ],
-        ]),
+        'heading' => Heading::new(['id' => 'heading']),
         'data_table' => DataTable::new([
             'id' => 'data_table',
             'sheet' => 'products',
@@ -55,6 +45,14 @@ return [
                     'type' => Column::STRING,
                 ],
             ],
+        ]),
+    ],
+    '#heading.menu.items' => [
+        'add' => LinkItem::new([
+            'title' => osm_t("Add Product"),
+            'url' => osm_url('GET /products/edit'),
+            'main' => 'true',
+            'sort_order' => 10,
         ]),
     ],
 ];

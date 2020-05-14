@@ -1,22 +1,19 @@
 <?php
 
-use Osm\Ui\Menus\Items\Type;
+use Osm\Ui\Menus\Views\LinkItem;
+use Osm\Ui\Menus\Views\SubmenuItem;
 
 return [
-    '#header.menu' => [
-        'items' => [
-            'content' => [
-                'type' => Type::SUBMENU,
-                'title' => osm_t("Content"),
-                'sort_order' => 10,
-                'items' => [
-                    'products' => [
-                        'type' => Type::LINK,
-                        'title' => osm_t("Products"),
-                        'url' => osm_url('GET /products/'),
-                    ],
-                ],
+    '#top_menu.items' => [
+        'content' => SubmenuItem::new([
+            'title' => osm_t("Content"),
+            'sort_order' => 10,
+            'items' => [
+                'products' => LinkItem::new([
+                    'title' => osm_t("Products"),
+                    'url' => osm_url('GET /products/'),
+                ]),
             ],
-        ],
+        ]),
     ],
 ];

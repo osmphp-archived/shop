@@ -11,8 +11,9 @@ use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
 use Osm\Ui\Forms\Views\StringField;
 use Osm\Ui\Forms\Views\TextField;
-use Osm\Ui\MenuBars\Views\Heading;
 use Osm\Ui\Menus\Items\Type;
+use Osm\Ui\Menus\Views\CommandItem;
+use Osm\Ui\Pages\Views\Heading;
 
 return [
     '@include' => ['page'],
@@ -32,22 +33,7 @@ return [
                 ],
             ],
         ]),
-        'heading' => Heading::new([
-            'id' => 'heading',
-            'items' => [
-                'save' => [
-                    'type' => Type::COMMAND,
-                    'title' => osm_t("Save"),
-                    'modifier' => '-filled',
-                    'sort_order' => 10,
-                ],
-                'delete' => [
-                    'type' => Type::COMMAND,
-                    'title' => osm_t("Delete"),
-                    'sort_order' => 20,
-                ],
-            ],
-        ]),
+        'heading' => Heading::new(['id' => 'heading']),
         'form' => Form::new([
             'id' => 'form',
             'route' => 'POST /products/edit',
@@ -206,6 +192,18 @@ return [
                     'sort_order' => 70,
                 ]),
             ],
+        ]),
+    ],
+    '#heading.menu.items' => [
+        'save' => CommandItem::new([
+            'title' => osm_t("Save"),
+            'main' => true,
+            'sort_order' => 10,
+        ]),
+        'delete' => CommandItem::new([
+            'title' => osm_t("Delete"),
+            'dangerous' => true,
+            'sort_order' => 20,
         ]),
     ],
 ];

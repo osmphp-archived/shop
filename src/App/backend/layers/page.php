@@ -1,23 +1,22 @@
 <?php
 
-use Osm\Ui\MenuBars\Views\Header;
-use Osm\Ui\Menus\Items\Type;
+use Osm\Ui\Menus\Views\LinkItem;
+use Osm\Ui\Menus\Views\MenuBar;
 
 return [
     '#page.items' => [
-        'header' => Header::new([
-            'id' => 'header',
-            'wrap_modifier' => '-secondary',
+        'header' => MenuBar::new([
+            'id' => 'top_menu',
+            'on_color' => 'secondary',
+            'horizontal_align' => 'center',
             'sort_order' => 10,
+            'items' => [
+                'home' => LinkItem::new([
+                    'title' => osm_t("Home"),
+                    'url' => osm_url('GET /'),
+                    'sort_order' => 0,
+                ]),
+            ],
         ]),
-    ],
-
-    '#header.menu.items' => [
-        'home' => [
-            'type' => Type::LINK,
-            'title' => osm_t("Home"),
-            'url' => osm_url('GET /'),
-            'sort_order' => 0,
-        ],
     ],
 ];
