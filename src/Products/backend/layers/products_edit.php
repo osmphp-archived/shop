@@ -41,7 +41,7 @@ return [
             'sheet' => 'products',
             'autocomplete_prefix' => 'backend-products__',
             'focus' => true,
-            'on_color' => 'secondary-dark',
+            'color' => 'primary',
             'items' => [
                 'basics' => Tab::new([
                     'title' => osm_t("Basics"),
