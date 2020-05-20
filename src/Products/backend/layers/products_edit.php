@@ -11,7 +11,6 @@ use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
 use Osm\Ui\Forms\Views\StringField;
 use Osm\Ui\Forms\Views\TextField;
-use Osm\Ui\Menus\Items\Type;
 use Osm\Ui\Menus\Views\CommandItem;
 use Osm\Ui\Pages\Views\Heading;
 
@@ -41,7 +40,6 @@ return [
             'sheet' => 'products',
             'autocomplete_prefix' => 'backend-products__',
             'focus' => true,
-            'on_color' => 'primary',
             'items' => [
                 'basics' => Tab::new([
                     'title' => osm_t("Basics"),
