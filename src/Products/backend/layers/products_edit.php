@@ -6,6 +6,7 @@ use Osm\Ui\Forms\Views\CheckboxField;
 use Osm\Ui\Forms\Views\DateField;
 use Osm\Ui\Forms\Views\DropdownField;
 use Osm\Ui\Forms\Views\Form;
+use Osm\Ui\Forms\Views\ImageField;
 use Osm\Ui\Forms\Views\PriceField;
 use Osm\Ui\Forms\Views\Section;
 use Osm\Ui\Forms\Views\Tab;
@@ -16,6 +17,7 @@ use Osm\Ui\Pages\Views\Heading;
 
 return [
     '@include' => ['page'],
+    //'#page.on_color' => 'primary',
     '#page.modifier' => '-products-edit',
     '#page.translations' => [
     ],
@@ -97,7 +99,6 @@ return [
                     ],
                 ]),
 
-
                 'content' => Tab::new([
                     'title' => osm_t("Content"),
                     'sort_order' => 20,
@@ -135,7 +136,7 @@ return [
                     'title' => osm_t("Images"),
                     'sort_order' => 30,
                     'items' => [
-                        'image' => StringField::new([
+                        'image' => ImageField::new([
                             'title' => osm_t("Image"),
                             'sort_order' => 10,
                         ]),
