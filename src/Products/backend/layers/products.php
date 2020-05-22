@@ -3,7 +3,6 @@
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
 use Osm\Ui\DataTables\Columns\Column;
 use Osm\Ui\DataTables\Views\DataTable;
-use Osm\Ui\Menus\Items\Type;
 use Osm\Ui\Menus\Views\LinkItem;
 use Osm\Ui\Pages\Views\Heading;
 
