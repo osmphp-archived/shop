@@ -49,7 +49,8 @@ class m01_products extends Migration
             $table->text('meta_description')->title("Meta Description");
 
             // base image
-            $table->string('image')->title("Image");
+            $table->int('image')->title("Image")
+                ->unsigned()->references('files.id');
 
         });
 
@@ -77,6 +78,13 @@ class m01_products extends Migration
                     ->unsigned();
             });
         }
+
+        // product can be an owner of the records in `files` table
+        $this->db->alter('files', function(Blueprint $table) {
+            $table->int('product')->title("Product")
+                ->unsigned()->pinned()
+                ->references('products.id')->on_delete('set null');
+        });
     }
 
     public function down() {
