@@ -138,6 +138,7 @@ return [
                     'items' => [
                         'image' => ImageField::new([
                             'title' => osm_t("Image"),
+                            'path' => 'products',
                             'sort_order' => 10,
                         ]),
 
