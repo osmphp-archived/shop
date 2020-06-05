@@ -88,9 +88,14 @@ class m01_products extends Migration
     }
 
     public function down() {
+        $this->db->alter('files', function(Blueprint $table) {
+            $table->dropColumns('product');
+        });
+
         foreach (['related', 'upsells', 'crosssells'] as $relation) {
             $this->db->drop("products__{$relation}");
         }
+
         $this->db->drop('products__images');
         $this->db->drop('products');
     }
