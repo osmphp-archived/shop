@@ -1,8 +1,8 @@
 <?php
 
 use Osm\Ui\Breadcrumbs\Views\Breadcrumbs;
-use Osm\Ui\DataTables\Columns\Column;
-use Osm\Ui\DataTables\Views\DataTable;
+use Osm\Ui\Tables\Columns\Column;
+use Osm\Ui\Tables\Views\Table;
 use Osm\Ui\Menus\Views\LinkItem;
 use Osm\Ui\Pages\Views\Heading;
 
@@ -22,7 +22,7 @@ return [
             ],
         ]),
         'heading' => Heading::new(['id' => 'heading']),
-        'data_table' => DataTable::new([
+        'data_table' => Table::new([
             'id' => 'data_table',
             'sheet' => 'products',
             'main_column' => 'title',
