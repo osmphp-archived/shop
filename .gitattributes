@@ -1,1 +1,13 @@
-/composer.json -merge
+* text=auto
+
+*.php diff=php
+*.md diff=markdown
+
+/.github export-ignore
+/bin/test_*.php export-ignore
+/samples export-ignore
+/sample-data export-ignore
+/tests export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+phpunit.xml export-ignore
