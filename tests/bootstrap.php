@@ -10,8 +10,14 @@ require 'vendor/autoload.php';
 umask(0);
 handle_errors();
 
-Apps::$project_path = dirname(__DIR__);
-Apps::compile(App::class);
-Apps::run(Apps::create(App::class), function(App $app) {
-    $app->migrations->up();
-});
+try {
+    Apps::$project_path = dirname(__DIR__);
+    Apps::compile(App::class);
+    Apps::run(Apps::create(App::class), function(App $app) {
+        $app->migrations()->up();
+    });
+}
+catch (Throwable $e) {
+    echo "{$e->getMessage()}\n{$e->getTraceAsString()}\n";
+    throw $e;
+}
