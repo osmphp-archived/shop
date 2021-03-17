@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Osm\Shop\Settings;
+namespace Osm\Shop\Sites;
 
 use Osm\App\App;
 use Osm\Core\BaseModule;

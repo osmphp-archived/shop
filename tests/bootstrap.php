@@ -14,6 +14,7 @@ try {
     Apps::$project_path = dirname(__DIR__);
     Apps::compile(App::class);
     Apps::run(Apps::create(App::class), function(App $app) {
+        $app->migrations()->fresh();
         $app->migrations()->up();
     });
 }
