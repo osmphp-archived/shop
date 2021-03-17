@@ -18,6 +18,7 @@ class test_01_env extends TestCase
             // WHEN you access it
             // THEN it is as set in PhpUnit configuration
             $this->assertTrue(true);
+
         });
     }
 }
