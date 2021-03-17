@@ -8,4 +8,8 @@
     <testsuite name="all">
         <directory prefix="test_" suffix=".php">tests</directory>
     </testsuite>
+    <php>
+        <env name="SETTINGS" value="tests/settings/sqlite__elastic.php"/>
+        <env name="CACHE" value="Osm\Framework\Cache\Array_"/>
+    </php>
 </phpunit>
