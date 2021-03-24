@@ -14,6 +14,8 @@ class Module extends BaseModule
     public static array $requires = [
         \Osm\Framework\Data\Module::class,
         \Osm\Framework\ElasticSearch\Module::class,
+        \Osm\Framework\Http\Module::class,
         \Osm\Framework\Migrations\Module::class,
+        \Osm\Framework\Themes\Module::class,
     ];
 }

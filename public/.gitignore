@@ -1,7 +1,4 @@
 /*
 !/.gitignore
-!/index.php
-!/.htaccess
-!/files
-/files/*
-!/files/.gitkeep
+!/*/index.php
+!/*/.htaccess
