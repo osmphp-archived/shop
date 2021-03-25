@@ -66,6 +66,12 @@ jobs:
             -   name: Install dependencies
                 run: composer update --prefer-dist --no-interaction --no-progress
 
+            -   name: Install Node modules
+                run: npm install
+
+            -   name: Run Gulp
+                run: gulp
+
             -   name: Execute tests
                 run: vendor/bin/phpunit
                 env:
