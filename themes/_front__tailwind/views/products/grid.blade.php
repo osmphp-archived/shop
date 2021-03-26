@@ -1,0 +1,3 @@
+<div>
+    Products will go here ...
+</div>
